@@ -8,11 +8,12 @@
 import UIKit
 import AVFoundation
 
+
 class ViewController: UIViewController {
     var Sound: AVAudioPlayer?
     override func viewDidLoad() {
         super.viewDidLoad()
-        let path = Bundle.main.path(forResource: "1111.mp3", ofType:nil)!
+        let path = Bundle.main.path(forResource: "1111.mp3", ofType: nil)!
         let url = URL(fileURLWithPath: path)
 
         do {
@@ -21,9 +22,6 @@ class ViewController: UIViewController {
         } catch {
             // couldn't load file :(
         }
-        // Do any additional setup after loading the view.
     }
-
-
 }
 
